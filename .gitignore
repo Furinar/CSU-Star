@@ -1,0 +1,96 @@
+# 操作系统相关文件
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# 编辑器/IDE 配置文件
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# IntelliJ IDEA/Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+build/
+.gradle/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+tmp/
+.metadata
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+.*.sw?
+.un~
+.claude/
+CLAUDE.md
+# 日志文件
+logs/
+*.log
+log/
+*.tmp
+*.temp
+AGENTS.md
+# 缓存文件
+cache/
+*.pid
+*.seed
+*.pid.lock
+
+# 压缩包
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 环境变量/敏感配置
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+/docs
+/data
