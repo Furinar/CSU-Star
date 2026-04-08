@@ -1,0 +1,3 @@
+[submodule "csu-star-admin"]
+	path = csu-star-admin
+	url = git@github.com:Furinar/csu-star-admin.git
