@@ -1,9 +1,12 @@
-[submodule "csu-star-admin"]
-	path = csu-star-admin
-	url = git@github.com:Furinar/csu-star-admin.git
 [submodule "csu-star-backend"]
 	path = csu-star-backend
 	url = git@github.com:starnighter/csu-star-backend.git
 [submodule "csu-star-frontend"]
 	path = csu-star-frontend
 	url = git@github.com:Furinar/csu-star-frontend.git
+[submodule "csu-star-wiki"]
+	path = csu-star-wiki
+	url = https://github.com/Furinar/csu-star-wiki.git
+[submodule "csu-star-admin"]
+	path = csu-star-admin
+	url = https://github.com/Furinar/csu-star-admin.git

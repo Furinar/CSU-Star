@@ -1,55 +1,78 @@
-# 南极星（中南指北 / CSU Star）
+<div align="center">
 
-中南大学在校生专属的学习资源共享与课程/教师评教参考平台。
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=80&section=header" />
 
-## 核心功能
+# 🌟 南极星 (CSU Star)
 
-- **学习资源共享**：上传/下载课件、真题、笔记等（PDF/Word/PPT/图片），积分驱动，机器+人工双重审核
-- **教师评价**：3 维度评分（教学质量、给分宽松度、考勤要求），教师排行榜
-- **课程评价**：3 维度评分（作业量、收获感、考试难度），课程排行榜
-- **积分体系**：签到/上传/邀请获取积分，下载消耗积分，完整流水记录
-- **社交互动**：点赞、收藏、评论（二级回复）、举报、纠错
-- **个人中心**：上传记录、下载历史、评价记录、积分明细、收藏列表
-- **通知中心**：审核结果、被点赞/评论等站内通知
-- **后台管理**：资源/评价审核、举报/纠错/反馈处理、用户管理、公告管理
-- **身份认证**：微信/QQ OAuth 登录，双 Token 机制，未登录仅可浏览
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1E90FF&center=true&vCenter=true&width=435&lines=Welcome+to+CSU+Star;中南大学学习资源共享与评教平台;Make+CSU+Great+Again)](https://git.io/typing-svg)
 
-## 技术栈
+**CSU Star，中南大学在校生专属的学习资源共享、课程评教与校园生存指南生态**
 
-| 层级 | 选型 |
-|------|------|
-| 前端 | Next.js · Ant Design Mobile · Zustand · TypeScript |
-| 后端 | Go · Gin · GORM · Zap |
-| 数据库 | PostgreSQL · Redis |
-| 存储/CDN | 腾讯云 COS · 腾讯云 CDN |
-| 部署 | Docker Compose · Nginx · Certbot |
-| CI/CD | GitHub Actions · Husky + lint-staged |
-| 监控 | Loki · Grafana |
-| 安全 | 腾讯云 WAF · 内容安全 API · ClamAV |
+[![License](https://img.shields.io/badge/License-GPL_v3-blue.svg?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
-## 快速启动（本地）
+</div>
 
-```bash
-cp .env.example .env
-docker compose up -d --build
-```
+## 📖 项目简介
 
-- 前端：http://localhost:3000
-- 后端：http://localhost:8080
-- API 文档：http://localhost:8080/swagger/index.html
+**南极星 (CSU Star)** 是一个面向中南大学全体师生的一站式综合性校园知识共享与互助生态平台。旨在打破大学校园内的信息差，帮助同学们获取更真实、有用的课程评价、优质学习资料以及生存指南。
 
-## 文档
+我们的口号是：**Make CSU Great Again!**
 
-见 [docs/](docs/) 目录（所有文档以数据库设计 V1.6 为唯一事实来源对齐）：
+## 🧩 核心子模块介绍
 
-- [产品需求文档](docs/产品需求文档.md) — PRD V1.2
-- [功能清单](docs/功能清单.md) — 用户故事与验收标准 V1.1
-- [架构设计](docs/架构设计.md) — 系统架构与数据流 V1.1
-- [数据库设计](docs/数据库设计.md) — 23 张表 DDL + Redis 键设计 V1.6
-- [接口规范](docs/接口规范.md) — REST API 规范 V1.2
-- [OpenAPI](docs/openapi.yaml) — OpenAPI 3.0.3 机器可读规范
-- [项目计划](docs/项目计划.md) — Sprint 划分与上线检查清单 V1.2
+本项目采用前后端分离的现代化生态架构，由以下四个核心子模块构成集群：
 
-## License
+### 1. 🖥️ 前端 (CSU Star Frontend)
+- **路径**：[`/csu-star-frontend`](./csu-star-frontend)
+- **简介**：面向学生用户的核心大前端，提供课程评价、资料下载、社交互动、排行榜等丰富功能。采用极具现代感的响应式设计。
+- **技术栈**：Next.js 15+ (App Router), Tailwind CSS, Zustand, TypeScript
 
-MIT
+### 2. ⚙️ 后端 (CSU Star Backend)
+- **路径**：[`/csu-star-backend`](./csu-star-backend)
+- **简介**：坚如磐石的业务支撑中心。处理用户认证（OAuth/邮箱）、资源上下架审核、评分计算等复杂的后台逻辑。
+- **技术栈**：Go 1.26, Gin, PostgreSQL + GORM, Redis
+
+### 3. 🛠️ 管理后台 (CSU Star Admin)
+- **路径**：[`/csu-star-admin`](./csu-star-admin)
+- **简介**：基于 Lithe Admin 深度定制的现代化后台管理系统，用于用户管理、举报处理、资源审核和数据统计等运营操作。轻巧而优雅。
+- **技术栈**：Vue 3, Naive UI, Vite, Tailwind CSS, Pinia
+
+### 4. 📚 维基指南 (CSU Star Wiki)
+- **路径**：[`/csu-star-wiki`](./csu-star-wiki)
+- **简介**：全校开源共建的“生存指南”。收录了入学须知、选课避坑、近百个专业详细介绍、科研竞赛等海量图文科普内容。
+- **技术栈**：VitePress
+
+## 🚀 本地开发指南
+
+由于本项目包含多个服务模块，推荐分别进入对应的子目录进行依赖安装和开发调试：
+
+### 启动各模块
+请参考各子模块下的 `README.md` 文件了解详细的启动步骤：
+- [📖 前端模块运行指南](./csu-star-frontend/README.md)
+- [📖 后端模块运行指南](./csu-star-backend/README.md)
+- [📖 管理后台运行指南](./csu-star-admin/README.md)
+- [📖 维基文档运行指南](./csu-star-wiki/README.md)
+
+## 🤝 参与贡献
+
+我们非常欢迎且需要各位 CSUer 的贡献！无论是提交 Issue 报告 Bug，还是提交 Pull Request 添加新特性，或是补充 Wiki 内容，我们都非常感激！
+
+1. Fork 本仓库
+2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 将您的更改推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
+
+## 📄 开源协议
+
+本项目采用 **[GPL-3.0 协议](./LICENSE)** 进行开源。
+这意味着你可以自由地使用、修改和分发本项目的源代码，但要求所有基于修改的衍生作品也必须开源并采用相同的 GPL-3.0 协议。详细信息请参阅项目根目录下的 `LICENSE` 文件。
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=80&section=footer" />
+
+<sub>Made with ❤️ for all CSUers</sub>
+
+</div>
